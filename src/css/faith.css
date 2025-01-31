@@ -1,0 +1,126 @@
+/* Faith Page Styles */
+.faith-main {
+  padding-top: 8rem;
+  min-height: calc(100vh - 300px);
+}
+
+.faith-hero {
+  background: linear-gradient(to right, rgba(44, 74, 124, 0.05), rgba(44, 74, 124, 0.1));
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faith-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faith-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+  color: var(--primary-color);
+}
+
+.faith-hero p {
+  font-size: 1.2rem;
+  color: #4a5568;
+}
+
+.faith-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.belief-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.belief-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.belief-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.belief-card:hover .belief-icon {
+  transform: scale(1.1);
+}
+
+.belief-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.belief-card h3 {
+  color: var(--primary-color);
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.belief-card p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .faith-main {
+    padding-top: 7rem;
+  }
+
+  .faith-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .faith-hero {
+    padding: 2rem 1rem;
+  }
+
+  .beliefs-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .belief-card {
+    padding: 1.5rem;
+  }
+
+  .belief-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .belief-icon i {
+    font-size: 1.5rem;
+  }
+
+  .belief-card h3 {
+    font-size: 1.25rem;
+  }
+}
